@@ -1,5 +1,5 @@
 1:HL["/Wordle-Clone/_next/static/css/c33996e15dc2fc9d.css",{"as":"style"}]
-0:["BGWxg4FPqFS_zL2hCL_XR",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Wordle-Clone/_next/static/css/c33996e15dc2fc9d.css","precedence":"next"}]],"$L3"]]]]
+0:["oihoElEE9JymprvIO5vVH",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Wordle-Clone/_next/static/css/c33996e15dc2fc9d.css","precedence":"next"}]],"$L3"]]]]
 4:HL["/Wordle-Clone/_next/static/css/7c81f1e1351f6790.css",{"as":"style"}]
 5:HL["/Wordle-Clone/_next/static/css/23330ab9e6fed4a2.css",{"as":"style"}]
 6:I{"id":7767,"chunks":["272:static/chunks/webpack-cc85fa9f35705d28.js","971:static/chunks/fd9d1056-c9f151c58d427982.js","596:static/chunks/596-8d8eff134da6096d.js"],"name":"default","async":false}
