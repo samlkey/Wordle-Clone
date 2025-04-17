@@ -7,6 +7,8 @@ import Keyboard from './Keyboard';
 import Guess from './Guess';
 import AlertPop from './Alert';
 
+
+
 export default function Game() {
   let dictionary = useRef<string[]>([]);
   let word = useRef<string>()
@@ -25,7 +27,7 @@ export default function Game() {
     //set theme
     keepTheme();
 
-    fetch("${basePath}/dictionary.txt")
+    fetch("/dictionary.txt")
       .then(response => response.text())
       .then(text => {
         const lines: string[] = text.split("\n").map(line => line.trim()).filter(line => line !== "");
