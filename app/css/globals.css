@@ -23,6 +23,10 @@ body {
   background-color: var(--dark-background); 
 }
 
+div{
+  transition: background .5s linear, color 0.4s linear;
+}
+
 :root{
   background-color: #181818;
 }
@@ -49,4 +53,27 @@ body {
 
 #main-page {
   text-align: center;
+}
+
+/*Animations*/
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }

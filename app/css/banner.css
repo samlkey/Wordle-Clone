@@ -9,7 +9,7 @@
     color: white;
     font-size: var(--wrapper-fontsize);
     font-weight: bold;
-    box-shadow: 0 10px 20px -10px black;
+    box-shadow: 0 10px 20px -10px var(--dark-background);
     gap: var(--wrapper-gap);
     display: flex;
     height: var(--wrapper-height);
@@ -30,6 +30,15 @@
     gap: var(--rightcontainer-gap);
     position:absolute;
     right: 20px;
+}
+
+.Wrapper .right-container svg{
+    width: 30px;
+    height: auto;
+}
+
+.Wrapper .right-container svg path{
+    fill: var(--font-colour);
 }
 
 h1 {
