@@ -21,13 +21,15 @@ export default function Game() {
   let column = 0; 
   let guess = ""; 
   let roundActive = true; 
-  let usedWords: (string | undefined)[] = []; 
+  let usedWords: (string | undefined)[] = [];
+  
 
   useEffect(() => {
     //set theme
     keepTheme();
+    const dictionaryUrl = new URL('dictionary.txt', window.location.href)
 
-    fetch("/dictionary.txt")
+    fetch(dictionaryUrl)
       .then(response => response.text())
       .then(text => {
         const lines: string[] = text.split("\n").map(line => line.trim()).filter(line => line !== "");
