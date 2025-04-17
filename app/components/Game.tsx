@@ -25,7 +25,7 @@ export default function Game() {
     //set theme
     keepTheme();
 
-    fetch("${basePath}/dictionary.txt")
+    fetch("/dictionary.txt")
       .then(response => response.text())
       .then(text => {
         const lines: string[] = text.split("\n").map(line => line.trim()).filter(line => line !== "");
