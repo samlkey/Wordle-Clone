@@ -1,9 +1,9 @@
 # Wordle
 
 <p float="left">
-  <img src="portrait.png" width="499" />
-  <img src="portraitSettings.png" width="499" />
-  <img src="settings.png" width="1001" /> 
+  <img src="./docs/portrait.png" width="499" />
+  <img src="./docs/portraitSettings.png" width="499" />
+  <img src="./docs/settings.png" width="1001" /> 
 </p>
 
 <br>
