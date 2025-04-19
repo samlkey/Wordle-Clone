@@ -1,19 +1,10 @@
-# Coverdle
-
-
-
-
-
-
-
+# Wordle
 
 <p float="left">
   <img src="portrait.png" width="499" />
-      <img src="portraitSettings.png" width="499" />
+  <img src="portraitSettings.png" width="499" />
   <img src="settings.png" width="1001" /> 
-
 </p>
-
 
 <br>
 
