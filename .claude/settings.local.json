@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\samke\\\\Desktop\\\\Coverdle\" -File -Force)",
+      "Bash(Select-Object Name)",
+      "Bash(python C:\\\\Users\\\\samke\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py \"word game puzzle browser app minimal dark\" --design-system -p \"Coverdle\")",
+      "Bash(python \"C:\\\\Users\\\\samke\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"word game puzzle browser app minimal dark\" --design-system -p \"Coverdle\")",
+      "Bash(npx tsc *)"
+    ]
+  }
+}

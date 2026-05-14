@@ -23,8 +23,21 @@ body {
   background-color: var(--dark-background); 
 }
 
-div{
-  transition: background .5s linear, color 0.4s linear;
+div, button {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 :root{
@@ -34,21 +47,29 @@ div{
 .theme-light{
   --dark-background: #F1F0E8;
   --light-background: #E5E1DA;
-  --font-colour: black; 
-  --score-background: #E5E1DA; 
-  --score-font-colour: black;
-  --grid-dark: rgb(162, 162, 162);
-  --alert-background: #E5E1DA;
+  --font-colour: #1a1a1a;
+  --score-background: #dddbd4;
+  --score-font-colour: #1a1a1a;
+  --score-border: rgba(0, 0, 0, 0.1);
+  --grid-dark: rgb(140, 140, 140);
+  --alert-background: #dddbd4;
+  --keyboard-bg: #d3d6da;
+  --keyboard-hover: #bbbec3;
+  --keyboard-active: #a4a7ab;
 }
 
 .theme-dark{
-  --dark-background: #181818;
-  --light-background: #181818;
-  --font-colour: white;
-  --score-background: white;
-  --score-font-colour: black;
+  --dark-background: #121213;
+  --light-background: #1a1a1b;
+  --font-colour: #ffffff;
+  --score-background: #2d2d2f;
+  --score-font-colour: #ffffff;
+  --score-border: rgba(255, 255, 255, 0.08);
   --grid-dark: rgb(58, 58, 60);
-  --alert-background: white;
+  --alert-background: #2d2d2f;
+  --keyboard-bg: #818384;
+  --keyboard-hover: #9a9b9c;
+  --keyboard-active: #6b6c6d;
 }
 
 #main-page {

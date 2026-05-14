@@ -1,136 +1,163 @@
-.settings-container {
-    border-bottom: 1px solid var(--font-colour);
-    padding: 15px 0 20px;
-    margin: 0 30px 0 30px;
-    display: flex;
-}
-
-.settings-container h2 {
-    font-size: 25px;
-}
-
-.settings-container p {
-    margin-top: -5px;
-    font-size: 0.8em;
-    color: var(--font-colour);
-}
-
-.email-left {
-    width: 50%;
-}
-
-.email-right {
-    width: 50%;
-    text-align: center;
-    color: var(--font-colour);
-    cursor: pointer;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.email-right svg{
-  width: 45px;
-  height: auto;
-}
-
-.bug {
-  width: 35px !important;
-  height: auto;
-}
-
-.email-right svg path{
-  fill: var(--font-colour);
-}
-
+/* ── Layout ── */
 .settings-content {
     color: var(--font-colour);
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: 4.5vh;
+    gap: 7px;
+    padding: 14px 18px;
 }
 
-.modal-footer{
-  color: var(--font-colour)
+/* ── Setting row cards ── */
+.settings-container {
+    display: flex;
+    align-items: center;
+    padding: 13px 16px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.07);
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    margin: 0;
+    transition: background-color 0.2s ease;
 }
 
- /* The switch - the box around the slider */
+.settings-container:hover {
+    background-color: rgba(128, 128, 128, 0.13);
+}
+
+.settings-container h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 3px;
+    color: var(--font-colour);
+    font-family: inherit;
+    letter-spacing: 0.01em;
+}
+
+.settings-container p {
+    margin: 0;
+    font-size: 11px;
+    opacity: 0.5;
+    color: var(--font-colour);
+    line-height: 1.4;
+}
+
+.email-left {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+.email-right {
+    flex-shrink: 0;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.email-right:hover {
+    opacity: 0.6;
+}
+
+.email-right svg {
+    width: 22px;
+    height: auto;
+    fill: var(--font-colour);
+}
+
+.bug {
+    width: 18px !important;
+    height: auto;
+}
+
+/* ── Toggle switch ── */
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-  
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    width: 44px;
+    height: 24px;
 }
 
-/* The slider */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #5fbad6;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.35);
+    transition: background-color 0.25s ease;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #ffffff;
+    transition: transform 0.25s ease;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 input:checked + .slider {
-  background-color: #de9235;
+    background-color: #6aaa64;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #de9235;
+input:focus-visible + .slider {
+    outline: 2px solid #6aaa64;
+    outline-offset: 2px;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+    transform: translateX(20px);
 }
 
-/* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+    border-radius: 24px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
-} 
+    border-radius: 50%;
+}
 
+.modal-footer {
+    color: var(--font-colour);
+}
+
+/* ── Responsive ── */
 @media only screen and (max-width: 600px) {
-    .settings-container p{
+    .settings-content {
+        padding: 10px 14px 10px;
+        gap: 6px;
+    }
+
+    .settings-container {
+        padding: 12px 14px;
+    }
+
+    .settings-container p {
         display: none;
     }
 
-    .email-right {
-        padding-top: 0;
+    .settings-container h2 {
+        font-size: 14px;
+        font-weight: 600;
     }
 
-    .settings-container h2 {
-        font-size: 20px;
-        font-weight: bold;
+    .email-right {
+        margin-left: 12px;
+    }
+
+    .email-right svg {
+        width: 20px;
     }
 }
-

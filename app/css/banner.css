@@ -35,10 +35,29 @@
 .Wrapper .right-container svg{
     width: 30px;
     height: auto;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .Wrapper .right-container svg path{
     fill: var(--font-colour);
+}
+
+.Wrapper .right-container a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.Wrapper .right-container a:hover svg {
+    opacity: 0.75;
+    transform: rotate(30deg);
+}
+
+.Wrapper .right-container a:hover {
+    background-color: rgba(128, 128, 128, 0.15);
 }
 
 h1 {

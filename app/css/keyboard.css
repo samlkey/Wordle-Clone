@@ -16,14 +16,34 @@
 }
 
 .keyboard button {
-    background-color: rgb(131, 131, 131);
+    background-color: var(--keyboard-bg);
+    color: var(--font-colour);
     height: 80px;
     width: 60px;
-    border-radius: 10%;
-    font-size: 30px;
+    border-radius: 8px;
+    font-size: 26px;
     font-weight: bold;
-
     font-family: 'Oswald', sans-serif;
+    transition: background-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    user-select: none;
+}
+
+.keyboard button:hover {
+    background-color: var(--keyboard-hover);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+}
+
+.keyboard button:active {
+    background-color: var(--keyboard-active);
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.keyboard button:focus-visible {
+    outline: 2px solid #6aaa64;
+    outline-offset: 2px;
 }
 
 .keyboard-wrapper {
@@ -35,11 +55,12 @@
         gap: 4px;
         margin-bottom: 4px;
     }
-    
+
     .keyboard button {
         height: 55px;
         width: 9%;
-        font-size: 20px;
+        font-size: 18px;
+        border-radius: 6px;
     }
 }
 
@@ -49,5 +70,6 @@
         height: 50px;
         width: 2%;
         font-size: 22px;
+        border-radius: 6px;
     }
 }

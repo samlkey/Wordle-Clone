@@ -34,8 +34,8 @@ export default function Modal({ children, onClose } : {onClose:any, children:any
             
           <div className='modal-footer'>
             <div className='left-footer'>
-            <a target="_blank" href="https://github.com/samlkey">
-              <p>samkey.site</p>
+            <a target="_blank" href="https://www.samkey.uk">
+              <p>samkey.uk</p>
             </a>
           </div>
 
